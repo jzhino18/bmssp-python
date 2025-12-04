@@ -1,12 +1,12 @@
 # Breaking the Sorting Barrier: A Python Implementation of the BMSSP Algorithm
 
-## 🚀 Introduction
+## Introduction
 
 Welcome to this educational repository for the **Bounded Multi-Source Shortest Path (BMSSP)** algorithm. This project provides a clear and commented Python implementation of the groundbreaking shortest path algorithm introduced in the paper "[Breaking the Sorting Barrier for Directed Single-Source Shortest Paths](https://arxiv.org/abs/2504.17033)".
 
 The primary goal of this repository is to serve as a learning tool for students, educators, and enthusiasts who want to understand the inner workings of modern graph algorithms. We'll explore not only the new BMSSP algorithm but also revisit classic algorithms like **Dijkstra's** and **Bellman-Ford** to fully appreciate the advancements made.
 
-## 🧐 The Quest for the Shortest Path: A Brief History
+## The Quest for the Shortest Path: A Brief History
 
 Finding the shortest path in a graph is one of the most fundamental problems in computer science, with applications ranging from GPS navigation and network routing to logistics and bioinformatics.
 
@@ -44,7 +44,7 @@ The **Bellman-Ford algorithm** uses a more methodical, dynamic programming appro
 
 The time complexity of Bellman-Ford is **$O(n \\cdot m)$**, which is slower than Dijkstra's but makes it more versatile for graphs that include negative weights.
 
-## ✨ The BMSSP Algorithm: Breaking the Barrier
+## The BMSSP Algorithm: Breaking the Barrier
 
 The BMSSP algorithm challenges the long-held belief in Dijkstra's optimality by introducing a novel approach that avoids the sorting bottleneck.
 
@@ -66,7 +66,7 @@ By combining these techniques, BMSSP bypasses the need to strictly sort all fron
 
 This represents a significant theoretical improvement over Dijkstra's $O(m + n \\log n)$ complexity, especially on sparse graphs where $m = O(n)$.
 
-## 🐍 Implementation in this Repository
+## Implementation in this Repository
 
 This repository offers two distinct implementations to serve different needs:
 
@@ -80,7 +80,7 @@ This repository offers two distinct implementations to serve different needs:
   * `src/graph.py`, `graph_loader.py`: Utilities for graph representation and loading data.
   * `main.py`: The main script to run benchmarks and compare the performance of the different solvers.
 
-## 🚀 How to Run
+##  How to Run
 
 1.  **Clone the repository and install dependencies:**
 
@@ -110,7 +110,7 @@ This repository offers two distinct implementations to serve different needs:
     pypy3 main.py --data livejournal
     ```
 
-## 📊 Performance Benchmarks
+## Performance Benchmarks
 
 The optimized `BmsspSolverV2` is not just a theoretical improvement but also a practical one, outperforming a standard Dijkstra implementation on several large-scale graphs.
 
